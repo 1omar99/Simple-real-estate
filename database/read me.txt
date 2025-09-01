@@ -1,0 +1,2 @@
+database name = ictd
+   folder name = web
