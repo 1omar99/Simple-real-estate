@@ -1,0 +1,81 @@
+ZamZam Real Estate
+===================
+
+A Real Estate Management Web Application built with PHP and MySQL.
+The system allows users to post, view, and manage property listings with an admin approval workflow.
+
+--------------------------------------------------
+FEATURES
+--------------------------------------------------
+- Post property listings (title, description, location, price, images).
+- Admin panel for approving or rejecting property posts.
+- Property listings with search and filter functionality.
+- Database-driven using MySQL.
+- Responsive frontend with HTML, CSS, and PHP.
+
+--------------------------------------------------
+REQUIREMENTS
+--------------------------------------------------
+- PHP 7.4 or higher
+- MySQL 5.7+ / MariaDB
+- Apache or Nginx server (XAMPP, WAMP, or LAMP stack recommended)
+- Git (if deploying via GitHub)
+
+--------------------------------------------------
+INSTALLATION & SETUP
+--------------------------------------------------
+1. Clone or copy the project folder into your server directory.
+   Example for XAMPP: C:\xampp\htdocs\zamzam-real-estate
+
+2. Import the Database:
+   - Open phpMyAdmin (or MySQL CLI).
+   - Create a new database:
+       CREATE DATABASE zamzam_real_estate;
+   - Import the SQL dump file located in the "database" folder.
+
+3. Configure Database Connection:
+   - Open config.php (or db.php if exists).
+   - Update with your local database credentials:
+       $host = "localhost";
+       $user = "root";
+       $pass = "";
+       $dbname = "zamzam_real_estate";
+
+4. Run the Application:
+   - Start Apache and MySQL in your server stack.
+   - Open your browser and visit:
+       http://localhost/zamzam-real-estate
+
+--------------------------------------------------
+PROJECT STRUCTURE
+--------------------------------------------------
+zamzam-real-estate/
+│-- config.php          -> Database configuration
+│-- index.php           -> Homepage
+│-- post_property.php   -> Post property form
+│-- admin/              -> Admin panel
+│-- assets/             -> CSS, JS, Images
+│-- database/
+│     └── zamzam_real_estate.sql  -> Database dump
+│-- README.txt          -> Documentation
+
+--------------------------------------------------
+DEFAULT ADMIN ACCESS
+--------------------------------------------------
+Username: admin
+Password: admin123
+(Change this after first login)
+
+--------------------------------------------------
+DEPLOYMENT
+--------------------------------------------------
+This project can be deployed on:
+- Shared Hosting (cPanel, DirectAdmin, etc.)
+- VPS/Cloud (DigitalOcean, AWS, etc.)
+- Localhost (XAMPP, WAMP, or LAMP)
+
+--------------------------------------------------
+LICENSE
+--------------------------------------------------
+This project is for educational purposes. 
+You may modify and use it for your own real estate business or learning.
